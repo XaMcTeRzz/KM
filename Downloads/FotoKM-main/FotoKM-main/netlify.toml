@@ -1,0 +1,12 @@
+[build]
+  command = "npm install && npm run build:netlify"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18.20.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
